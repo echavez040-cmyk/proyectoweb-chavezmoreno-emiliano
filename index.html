@@ -40,6 +40,93 @@
     </div>
   </header>
 
+  <!-- AQUÍ INICIA EL MAIN   -->
+  <main>
+    <!-- HERO con video, si no quiero video, pendiente cambiarlo-->
+    <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <!--Estos son los botones que estan dentro del video-->
+
+      <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Funciones</a>
+          <a class="btn outline" href="#voluntariado">Salas</a>
+        </div>
+
+        <!--Estas tarjetas es para colocar estadisticas y la clase de stat es para colocar datos-->
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+67.000</div>
+            <div class="stat-label">Peliculas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+12.000</div>
+            <div class="stat-label">Formatos de peliculas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+300</div>
+            <div class="stat-label">Promociones</div>
+          </div>
+        </div>
+      </div>
+    </section> <!--Fin hero y cierra las estadísticas y todo-->
+
+    <!--Aqui hay 3 tarjetas para destacar, proyectos, productos, servicios-->
+
+    <section id="proyectos" class="projects container">
+      <h2>CINEMI</h2>
+      <p class="lead">Las mejores peliculas siempre:</p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>MAS MAS PROMOCIONES</h3>
+            <p>Las Mejores PROMOCIONES</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>Alimentos</h3>
+            <p>La mejor comida del cine</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img" id="cordoba"></div>
+          <div class="card-body">
+            <h3>Tipos de Salas</h3>
+            <p>Escuelas y centros de aprendizaje fortalecidos para los niños y niñas</aside> de 
+              famili</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!--Aqui inicia el contacto y las noticias-->
+
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No te pierdas lo último!</h2>
+          <p>Suscríbete para recibir noticias e historias.</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
+
   <footer>
 
   <div class="footer-social">
@@ -70,7 +157,7 @@
 
   <div class="footer-bottom">
     <div class="container">
-      &copy; <span id="anio"></span> DEL NORTH CAPS
+      &copy; <span id="anio"></span> CINEMI
     </div>
   </div>
 
