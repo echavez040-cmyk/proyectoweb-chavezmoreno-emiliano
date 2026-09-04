@@ -16,7 +16,7 @@
     <!--El meta dato de viewport es para que se adapte a cualquier pantalla-->
     <meta name="author" content="Emiliano Moreno">
 
-    <title>CINEMI</title>
+    <title>LEGION</title>
     <!--El titulo como voy a apaecer en la web-->
     <link rel="stylesheet" href="css/styles.css">
     <!--Link real enlaza con la carpeta y el archivo del css-->
@@ -26,14 +26,17 @@
     <header class="header">
     <div class="container header-inner">
       <a class="logo" href="#">
-        <img src="img/logo emi.png" alt="Logo Cine Emi" height="70" />
+        <img src="img/Logo.jpg" alt="Logo LEGION" height="70" />
       </a>
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="#Menu">Menu</a></li>
-          <li><a href="#Peliculas">Peliculas</a></li>
-          <li><a href="#Salas">Salas</a></li>
-          <li><a class="btn-dona" href="#Comprar">Comprar</a></li>
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="#Nosotros">Nosotros</a></li>
+          <li><a href="#Entretenimientos">Entretenimientos</a></li>
+          <li><a class="btn-dona" href="#Membresias">Membresias</a></li>
+          <li><a href="#Entrenadores">Entrenadores</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+
         </ul>
       </nav>
       <button id="menuToggle" class="menu-toggle">☰</button>
@@ -43,67 +46,104 @@
   <!-- AQUÍ INICIA EL MAIN   -->
   <main>
     <!-- HERO con video, si no quiero video, pendiente cambiarlo-->
-    <section class="hero video-hero">
-      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+    <!--section class="hero video-hero"-->
+      <!--<video class="hero-video" id="heroVideo" autoplay loop playsinline>
         <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
       </video>
-      <div class="hero-overlay"></div>
+      <div class="hero-overlay"></div>-->
 
       <!--Estos son los botones que estan dentro del video-->
 
+      
+    <!--/section--> <!--Fin hero y cierra las estadísticas y todo-->
+
+     <!-- CARRUSEL DE IMÁGENES / LANZAMIENTOS / PRODUCTOS ETC -->
+    <section id="lanzamientos" class="carousel-section container">
+      <h2>LEGION</h2>
+
       <div class="hero-content container">
         <div class="hero-actions">
-          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Funciones</a>
-          <a class="btn outline" href="#voluntariado">Salas</a>
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Planes</a>
+          <a class="btn outline" href="#voluntariado">Mas</a>
         </div>
 
         <!--Estas tarjetas es para colocar estadisticas y la clase de stat es para colocar datos-->
+        
+
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="img/LEGIONFUERA.jpg" alt="LEGION">
+            <p class="carousel-caption">Donde la disciplina se convierte en fuerza.</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/legiondentro.jpg" alt="Instalaciones">
+            <p class="carousel-caption">Instalaciones</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/BOX.jpg" alt="Clases">
+            <p class="carousel-caption">Clases</p>
+          </div>
+        </div>
+
         <div class="stats-grid">
           <div class="stat">
-            <div class="stat-number">+67.000</div>
-            <div class="stat-label">Peliculas</div>
+            <div class="stat-number">+50</div>
+            <div class="stat-label">Planes</div>
           </div>
           <div class="stat">
-            <div class="stat-number">+12.000</div>
-            <div class="stat-label">Formatos de peliculas</div>
+            <div class="stat-number">+20</div>
+            <div class="stat-label">Servicios</div>
           </div>
           <div class="stat">
-            <div class="stat-number">+300</div>
-            <div class="stat-label">Promociones</div>
+            <div class="stat-number">+15</div>
+            <div class="stat-label">Clases</div>
           </div>
         </div>
       </div>
-    </section> <!--Fin hero y cierra las estadísticas y todo-->
+        
+
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">&#10095;</button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+    <!-- FIN CARRUSEL -->
 
     <!--Aqui hay 3 tarjetas para destacar, proyectos, productos, servicios-->
 
     <section id="proyectos" class="projects container">
-      <h2>CINEMI</h2>
-      <p class="lead">Las mejores peliculas siempre:</p>
+      <h2>LEGION</h2>
+      <p class="lead">Bienvenido a tu gimnasio
+
+Un espacio diseñado para ayudarte a alcanzar tus metas. Contamos con instalaciones modernas, equipo de calidad y un ambiente motivador para que disfrutes cada entrenamiento. ¡Empieza hoy y da el siguiente paso hacia tu mejor versión!:</p>
 
       <div class="project-cards">
         <article class="card">
           <div class="card-img" id="antioquia-caucasia"></div>
           <div class="card-body">
-            <h3>MAS MAS PROMOCIONES</h3>
-            <p>Las Mejores PROMOCIONES</p>
+            <h3>Entrenadores</h3>
+            <p>Contamos con los mejores entrenadores, comprometidos con ayudarte a alcanzar tu máximo potencial.
+Te acompañamos con experiencia, motivación y entrenamientos diseñados para lograr tus objetivos.</p>
           </div>
         </article>
 
         <article class="card">
           <div class="card-img" id="guajira"></div>
           <div class="card-body">
-            <h3>Alimentos</h3>
-            <p>La mejor comida del cine</p>
+            <h3>Membresias</h3>
+            <p>Contamos con membresías diseñadas para adaptarse a tus objetivos y necesidades.
+Elige el plan ideal para ti y disfruta de todo lo que LEGION tiene para ofrecer.</p>
           </div>
         </article>
 
         <article class="card">
           <div class="card-img" id="cordoba"></div>
           <div class="card-body">
-            <h3>Tipos de Salas</h3>
-            <p>Escuelas y centros de aprendizaje fortalecidos para los niños y niñas</aside> de 
-              famili</p>
+            <h3>Instalaciones</h3>
+            <p>Contamos con instalaciones modernas, amplias y equipadas para que entrenes cómodamente y alcances tus objetivos.</aside> 
+              </p>
           </div>
         </article>
       </div>
@@ -116,7 +156,7 @@
       <div class="container newsletter-inner">
         <div>
           <h2>¡No te pierdas lo último!</h2>
-          <p>Suscríbete para recibir noticias e historias.</p>
+          <p>Suscríbete para recibir notificaciones y promociones.</p>
         </div>
         <form id="subscribeForm" class="subscribe-form" novalidate>
           <input id="email" type="email" placeholder="Tu correo electrónico" required />
@@ -132,20 +172,8 @@
   <div class="footer-social">
     <div class="container social-icons">
 
-      <a href="https://www.facebook.com/" aria-label="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-
-      <a href="https://www.instagram.com/" aria-label="Instagram">
+      <a href="https://www.instagram.com/emi.mooreno?igsi=MTRvbGx5M3VuYXFzNw%3D%3D&utm_source=qr" aria-label="Instagram">
         <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a href="https://www.youtube.com/" aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
       </a>
 
       <a href="https://x.com/" aria-label="X (Twitter)">
@@ -157,7 +185,7 @@
 
   <div class="footer-bottom">
     <div class="container">
-      &copy; <span id="anio"></span> CINEMI
+      &copy; <span id="anio"></span> LEGION
     </div>
   </div>
 

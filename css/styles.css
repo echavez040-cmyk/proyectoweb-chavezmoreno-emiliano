@@ -7,8 +7,8 @@
 }
 
 .header {
-    background: hwb(0 100% 0%);
-    color: #ff7700;
+    background: lab(0% 0 0);
+    color: lab(35.55% 58.82 47.73);
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -30,9 +30,8 @@
   }
   
 .logo img {
-  border-radius: 100px;
-  width: 150px;
-  height: 90px;
+  width: 110px;
+  height: auto;
   }
   
 .header h1 {
@@ -50,7 +49,7 @@
     list-style: none;
 }
 .main-nav ul li a{
-color:#070707;
+color:#ffffff;
 text-decoration: none;
 margin-left: 2rem;
 display: flex;
@@ -59,19 +58,19 @@ gap: 15px; /*Espacio entre las secciones del menú nav */
   }
   
 .btn-dona {
-    background-color: hwb(22 3% 2%);
-    color: #333333;
+    background-color: lab(35.55% 58.82 47.73);
+    color: hsl(0, 100%, 100%);
   padding: 10px 20px;
   margin-left: 15px;
   border-radius: 10px;
-  border: 3px solid white;
+  border: 3px solid lab(35.55% 58.82 47.73);
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
 .nav-button:hover {
-background-color: #040404;
+background-color: #ee7474;
 transform: scale(1.05);
 }
 
@@ -88,23 +87,27 @@ transform: scale(1.05);
 
 .btn.primary {
   background: linear-gradient(45deg, var(--orange), var(--orange-light));
-  color: #fff;
+  color: #ffffff00;
+    background: lab(0% 0 0 / 0);
+  border: 2px solid lab(18.47% 0 0 / 0);
 }
 
 .btn.primary:hover {
+     background: lab(35.55% 58.82 47.73 / 0);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(255, 107, 60, 0.3);
+  box-shadow: 0 8px 16px lab(35.55% 58.82 47.73 / 0);
 }
 
 .btn.outline {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  background: lab(0% 0 0 / 0);
+  border: 2px solid lab(18.47% 0 0 / 0);
+  color: lab(100% 0.01 -0.01 / 0);
 }
 
 .btn.outline:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: lab(35.55% 58.82 47.73 / 0);
   transform: translateY(-2px);
+    box-shadow: 0 8px 16px lab(35.55% 58.82 47.73 / 0);
 }
 
 /* Stats */
@@ -118,34 +121,136 @@ transform: scale(1.05);
 
 .stat {
   flex: 0 1 140px;
-  background: rgba(255, 255, 255, 0.15);
+  background: lab(0% 0 0 / 0.791);
   border-radius: 10px;
   padding: 1rem 0.8rem;
   text-align: center;
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .stat-number {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: lab(35.55% 58.82 47.73);
   margin-bottom: 0.3rem;
 }
 
 .stat-label {
   font-size: 0.8rem;
-  color: #f1f5f9;
+  color: #ffffff;
   opacity: 0.95;
 }
 
+/* Carrusel de imágenes */
+.carousel-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.carousel {
+    background-color: lab(0% 0 0 / 0.791);
+  position: relative;
+  max-width: 1400px;
+  margin: 1.5rem auto 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px lab(35.55% 58.82 47.73 / 0.519);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.8rem;
+  background: rgba(3, 3, 3, 0.455);
+  color: #fff;
+  font-weight: 600;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: lab(35.55% 58.82 47.73);
+  color: #fff;
+}
+
+.carousel-btn.prev {
+  left: 12px;
+}
+
+.carousel-btn.next {
+  right: 12px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0.8rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: #c88585;
+}
+
+
+
 /* Projects */
 .projects {
+    color: lab(35.55% 58.82 47.73);
+    text-align: center;
+  line-height: 2.0;
   padding:3rem 0;
 }
 
 .lead {
-  color:var(--muted);
+  color:white;
+  text-align: center;
+  line-height: 2.0;
 }
 
 .project-cards {
@@ -156,9 +261,9 @@ transform: scale(1.05);
 }
 
 .card {
-  background:#fff;
+  background: lab(18.47% 0 0 / 0.791);
   border-radius:12px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  box-shadow:0 6px 18px rgb(1, 1, 1);
   overflow:hidden;
   transition:transform .2s;
 }
@@ -168,7 +273,7 @@ transform: scale(1.05);
 }
 
 .card-img {
-  height:120px;
+  height:200px;
   background:linear-gradient(135deg,var(--violet-light),var(--blue-light));
   display:flex;
   align-items:center;
@@ -183,27 +288,32 @@ transform: scale(1.05);
 
 .card-body h3 {
   margin:0 0 0.4rem;
+  color:white;
+  text-align: center;
+  line-height: 2.0;
 }
 
 .card-body p {
-  color:var(--muted);
+  color: white;
   margin:0;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 #antioquia-caucasia {
-  background-image: url("../img/Promociones.jpg");
+  background-image: url("../img/Entrenadores.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #guajira {
-  background-image: url("../img/Funciones.jpg");
+  background-image: url("../img/Membresias.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #cordoba {
-  background-image: url("../img/Salas.jpg");
+  background-image: url("../img/Instalaciones.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -212,7 +322,7 @@ transform: scale(1.05);
 .newsletter {
   padding:2rem 0;
   background:linear-gradient(90deg, var(--violet-light) 0%, var(--blue-light) 100%);
-  color:#fff;
+  color:#ffffff;
 }
 
 .newsletter-inner {
@@ -246,7 +356,7 @@ transform: scale(1.05);
 
 .footer-social {
     width: 100%;
-    background-color: #E8A0BF;
+    background-color: lab(35.55% 58.82 47.73);
     padding: 25px 0;
 }
 
@@ -264,13 +374,18 @@ transform: scale(1.05);
 }
 
 .social-icons a:hover {
-    color: #9AAF94;
+    color: #010101;
 }
 
 .footer-bottom {
     width: 100%;
-    background-color: #333;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+
+body {
+    background-color: #111111;
 }
